@@ -1,0 +1,6 @@
+name: me_isocross
+
+# GA emitter
+iso_sigma: 0.005
+cross_lambda: 0.1
+cross_prob: 0.5
