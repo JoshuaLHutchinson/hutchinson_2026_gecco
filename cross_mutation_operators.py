@@ -90,8 +90,9 @@ def isolinecross_variation(
     ) -> jnp.ndarray:
 
         iso_noise = jax.random.normal(random_key, shape=x1.shape) * iso_sigma
-        x1 = (x1 + iso_noise) + jax.vmap(jnp.multiply)((x2 - x1), line_noise)
-        x2 = (x2 - iso_noise) + jax.vmap(jnp.multiply)(-(x2 - x1), line_noise)
+        diff = x2 - x1
+        x1 = (x1 + iso_noise) + jax.vmap(jnp.multiply)((diff), line_noise)
+        x2 = (x2 - iso_noise) + jax.vmap(jnp.multiply)(-diff, line_noise)
 
         # Crossover
         def crossover(key):
