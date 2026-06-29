@@ -14,12 +14,12 @@ Quality-Diversity (QD) variation operators often rely on gradual, incremental va
 
 <div align="center">
   <!-- Replace 'assets/crossover_demo.png' with the actual path to your saved image -->
-  <img src="simple_simulation.pdf" alt="Simulation of the variation operators used in the paper" width="600"/>
+  <img src="simple_simulation.png" alt="Simulation of the variation operators used in the paper" width="600"/>
   <br>
   <i>Simulation of the variation operators used in the paper. IsoLineCross, as shown in (d), provides a perpendicular exploration to the existing hypervolume.</i>
 </div>
 
-![Simulation of the variation operators used in the paper](simple_simulation.pdf)
+![Simulation of the variation operators used in the paper](simple_simulation.png)
 
 
 
